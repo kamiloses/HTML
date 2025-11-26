@@ -4,104 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .main-section {
+      background-color: palevioletred;
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px; /* trochę przestrzeni od krawędzi */
+    }
+
+    .left nav {
+      display: flex;
+      gap: 20px; /* odstęp między linkami w nav */
+    }
+
+    .center h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .right a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+  </style>
 </head>
 <body>
-<header>
-<h2>Joseph Shmoe | Ceramics</h2>
-<nav>
-  <ul>
-    <li>Work</li>
-    <li>About</li>
-    <li>Contract</li>
-  </ul>
 
-</nav>
-
-</header>
-<main>
-  <section class="images">
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="Image 1">
-    <p>Joshua Vase</p>
-  </div>
-
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="Image 2">
-    <p>Beautiful Ceramic</p>
-  </div>
-
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Image 3">
-    <p>Pottery Bowl</p>
-  </div>
-
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1576020799627-aeac74d58064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2615&q=80" alt="Image 4">
-    <p>Ceramic Mug</p>
-  </div>
-
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80" alt="Image 5">
-    <p>Handmade Plate</p>
-  </div>
-
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="Image 6">
-    <p>Clay Vase</p>
-  </div>
-
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="Image 7">
-    <p>Decorative Pot</p>
-  </div>
-
-  <div class="photo-card">
-    <img src="https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80" alt="Image 8">
-    <p>Art Vase</p>
-  </div>
-  </section>
-</main>
-
-<section class="description">
-<p>Designing, making, and selling goods of  timeless design and uncompromising integrity <br>-made
-  thoughtfully, honestly, and with pride <br> -to be enjoyed with similar intention.</p>
-<span>Let's work together.</span>
+<section class="main-section">
+  <header>
+    <div class="left">
+      <nav>
+        <a href="#">Blog</a>
+        <a href="#">Speaking Events</a>
+      </nav>
+    </div>
+    <div class="center">
+      <h1>Hazel</h1>
+    </div>
+    <div class="right">
+      <a href="#">Contact Me</a>
+    </div>
+  </header>
 </section>
-
 
 </body>
 </html>
-<style>
-
-
-
-header{display: flex;align-items: center;}
-header h2{margin-left: 50px}
-ul{display: flex;justify-content: space-between;width: 100%;}
-li{list-style: none; }
-.images{
-  display: flex; flex-wrap: wrap; justify-content: space-around;
-}
-.description{
-  width: 30vw;
-  font-size: 30px;
-  margin-left: 300px;
-  margin-top: 200px;
-
-}
-
-
-img {
-  width: 45vw;
-  height: 500px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-main{
-  margin-top: 5vh;
-
-}
-</style>
-
-
